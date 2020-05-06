@@ -16,13 +16,15 @@ const TodoList = (props) => {
     }
   };
   return (
-    <ul className='todo-list'>
-      {todos.map((todo, i) => (
-        <li key={i} onClick={() => handleClick(todo)}>
-          {todo.title}
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className='todo-list'>
+        {todos.map((todo, i) => (
+          <li key={i} onClick={() => handleClick(todo)}>
+            {todo.title}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 
